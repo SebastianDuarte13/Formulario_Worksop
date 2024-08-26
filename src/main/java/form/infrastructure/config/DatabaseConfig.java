@@ -17,7 +17,6 @@ private static final String URL = "jdbc:mysql://localhost:3306/public";
     }
 } 
 
-
 //---para usar en campus--
 /*
 public class DatabaseConfig {
@@ -29,10 +28,11 @@ public class DatabaseConfig {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         }
 }
-
 */
-//----para usar Ospina---
+
 /*
+//----para usar Ospina---
+
 public class DatabaseConfig {
     private static final String URL = "jdbc:mysql://localhost:3306/public";
         private static final String USER = "root";

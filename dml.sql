@@ -29,4 +29,3 @@ INSERT INTO subresponse_options (subresponse_number, created_at, updated_at, sub
 
 INSERT INTO response_question (response_id, subresponses_id, responsetext) VALUES (1, 1, 'Muy positivo');
 INSERT INTO response_question (response_id, subresponses_id, responsetext) VALUES (2, 2, 'Positivo');
- aa

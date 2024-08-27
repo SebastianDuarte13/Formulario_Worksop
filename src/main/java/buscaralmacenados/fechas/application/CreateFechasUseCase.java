@@ -11,6 +11,6 @@ public class CreateFechasUseCase {
     }
 
     public void execute(Fechas fechas) {
-        fechasService.FindFechasById(fechas);
+        fechasService.findFechasByCreatedAt(fechas.getCreated_at(), fechas.getUpdated_at());
     }
 }

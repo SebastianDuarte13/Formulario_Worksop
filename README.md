@@ -1,4 +1,4 @@
-# TRABAJO FORMULARO
+# TRABAJO FORMULARIO
 
 #### Este Workshop consiste en realizar una encuesta para las personas que la realicen con preguntas muy sencillas pero con interfaz dirigida para administradores y usuarios, contando con un sistema de login el cual si eres un administrador podras realizar cualquier pregunta y realizar los Crud's de todas las tablas y el usuario solo podra realizar la encuesta
 

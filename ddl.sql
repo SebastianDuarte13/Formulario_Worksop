@@ -15,7 +15,7 @@ CREATE TABLE users(
     id INT AUTO_INCREMENT PRIMARY KEY,
     enabled BOOLEAN,
     username VARCHAR(12),
-    password VARCHAR(255)
+    password VARCHAR(255) 
 );
 
 CREATE TABLE category_catalog(

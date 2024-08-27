@@ -74,6 +74,13 @@ import form.response_question.domain.service.RespondeQuestionService;
 import form.response_question.infrastructure.in.RespondeQuestionController;
 import form.response_question.infrastructure.out.RespondeQuestionRepository;
 
+//import para mostrar listado de quien contesto encuesta
+import buscaralmacenados.fechas.application.CreateFechasUseCase;
+import buscaralmacenados.fechas.infrastructure.in.FechasController;
+import buscaralmacenados.fechas.infrastructure.out.FechasRepository;
+import buscaralmacenados.fechas.domain.service.FechasService;
+
+
 
 public class Admin extends javax.swing.JFrame {
 
@@ -344,14 +351,23 @@ public class Admin extends javax.swing.JFrame {
         SubResOpController subResOpController = new SubResOpController(createSubResOpUseCase, subResOpService); 
         subResOpController.tabla_SubResOp();
     }//GEN-LAST:event_subresponse_optionsActionPerformed
+    /* 
 
+    boton de response question
     private void response_questionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_response_questionActionPerformed
         RespondeQuestionService respondeQuestionService = new RespondeQuestionRepository();
         CreateRespondeQuestionUseCase createRespondeQuestionUseCase = new CreateRespondeQuestionUseCase(respondeQuestionService);
         RespondeQuestionController respondeQuestionController = new RespondeQuestionController(createRespondeQuestionUseCase, respondeQuestionService);
         respondeQuestionController.tabla_RespondeQuestion();
     }//GEN-LAST:event_response_questionActionPerformed
+    */
 
+    private void response_questionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_response_questionActionPerformed
+        FechasService fechasService = new FechasRepository();
+        CreateFechasUseCase createFechasUseCase = new CreateFechasUseCase(fechasService);
+        FechasController fechasController = new FechasController(createFechasUseCase, fechasService);
+        fechasController.mostrarencuestas();
+    }//GEN-LAST:event_response_questionActionPerformed
     /**
      * @param args the command line arguments
      */

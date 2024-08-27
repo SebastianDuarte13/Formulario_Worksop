@@ -330,4 +330,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField usuarioingresar;
     private javax.swing.JTextField usuarioregister;
     // End of variables declaration//GEN-END:variables
+    public boolean authenticate() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'authenticate'");
+    }
 }

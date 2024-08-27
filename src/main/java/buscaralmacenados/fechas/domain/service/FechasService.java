@@ -1,7 +1,8 @@
 package buscaralmacenados.fechas.domain.service;
 
-import buscaralmacenados.fechas.domain.entity.Fechas;
+import java.sql.Date;
+import java.sql.ResultSet;
 
 public interface FechasService {
-    Fechas FindFechasById(Fechas fechas);
+    ResultSet findFechasByCreatedAt(Date startDate, Date endDate);
 }
